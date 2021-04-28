@@ -31,6 +31,10 @@ public class ListDemo {
 		System.out.println(listOfCompanies);
 		System.out.println(listOfCompanies.get(1));
 		
+		for(String comp : listOfCompanies) {
+			System.out.println(comp);
+		}
+		
 		System.out.println("-----------------");
 		List<String> listOfCities = new LinkedList<String>();
 		listOfCities.add("MUMBAI");
