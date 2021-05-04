@@ -17,6 +17,7 @@ public class TestArrayStack {
 		
 		stack.push(employee1);
 		stack.push(employee2);
+		
 		stack.push(employee3);
 		
 		System.out.println("stack size :: "+stack.size());
@@ -24,6 +25,9 @@ public class TestArrayStack {
 		
 		stack.printStack();
 		System.out.println("Top : => "+stack.peek());
+		
+		stack.pop();
+		System.out.println("After removal Top : => "+stack.peek());
 	}
 
 }

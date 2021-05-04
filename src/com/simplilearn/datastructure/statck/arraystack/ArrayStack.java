@@ -26,12 +26,15 @@ public class ArrayStack {
 	}
 	
 	//pop
-	public Employee ppo() {
+	public Employee pop() {
 		//verify stack is empty
 		if(isEmpty()) {
 			throw new EmptyStackException();
 		}
-		return stack[top-1];
+		//remove element from top
+		Employee removedElem = stack[--top];
+		stack[top] = null;
+		return removedElem;
 	}
 	
 	// peek
